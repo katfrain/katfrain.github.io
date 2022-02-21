@@ -22,6 +22,10 @@ header {
 header nav {
 	float: right;
 }
+header a {
+	color: white;
+	text-decoration: none;
+}
 header nav ul {
 	list-style: none;
 	margin: 0px;

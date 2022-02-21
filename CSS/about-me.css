@@ -19,6 +19,10 @@ header {
 	margin: 5px;
 	letter-spacing: 0.02em;
 }
+header a {
+	color: white;
+	text-decoration: none;
+}
 header nav {
 	float: right;
 }
@@ -103,7 +107,7 @@ header nav a {
 	transform: translateY(50%)
 }
 
-.image {
+img {
 	background-color: grey;
 	border-radius: 20px;
 	height: 550px;

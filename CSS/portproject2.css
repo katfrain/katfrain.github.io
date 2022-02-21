@@ -22,6 +22,10 @@ header {
 header nav {
 	float: right;
 }
+header a {
+	color: white;
+	text-decoration: none;
+}
 header nav ul {
 	list-style: none;
 	margin: 0px;
@@ -98,9 +102,7 @@ header nav a {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-left: 10vw;
-	margin-right: 10vw;
-	margin-top: 0.8%;
+	margin: 0.8% 10vw 0.8% 10vw;
 }
 
 div img {

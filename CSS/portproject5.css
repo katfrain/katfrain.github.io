@@ -22,6 +22,10 @@ header {
 header nav {
 	float: right;
 }
+header a {
+	color: white;
+	text-decoration: none;
+}
 header nav ul {
 	list-style: none;
 	margin: 0px;
@@ -95,12 +99,10 @@ header nav a {
 }
 
 .container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-left: 10vw;
-	margin-right: 10vw;
-	margin-top: 8%;
+	display: grid;
+	grid-template-columns: 10% 40% 40% 10%;
+	grid-template-rows: 10% 80% 10%;
+	min-height: 85vh;
 }
 
 div img {
@@ -110,9 +112,16 @@ div img {
 	min-width: 200px;
 }
 
+#image {
+	grid-column: 2 / span 1;
+	grid-row: 2 /span 1;
+}
+
 .text {
-	margin-left: 150px;
 	width: 35vw;
+	margin-top: 13%;
+	grid-column: 3 / span 1;
+	grid-row: 2 /span 1;
 }
 @media (max-width: 1750px) {
 	.text {
