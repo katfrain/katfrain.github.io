@@ -105,10 +105,11 @@ header nav a {
 	margin-right: auto;
 	margin-top: 3vh;
 	margin-bottom: auto;
-	height: 80vh;
+	height: 85vh;
 	width:40vw;
 	max-width:662px;
 	max-height:855px;
+	min-width: 280px;
 	background-image: linear-gradient(to right, #F1D0BD , #CFE1E1);
 	border-radius: 20px;
 }
@@ -140,7 +141,7 @@ input {
 
 textarea {
 	width: 40%;
-	height: 200px;
+	height: 10vh;
 	padding: 15px 15px;
 	margin: 10px;
 	background-color: #C4C4C4;

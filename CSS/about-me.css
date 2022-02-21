@@ -98,33 +98,47 @@ header nav a {
 .container {
 	display: flex;
 	flex-direction: row;
-	margin: auto;
-	max-height: 509px;
-	max-width: 1321px;
-	height: 35vh;
-	width: 60vw;
-	top: 50%; 
-	transform: translateY(50%)
+	flex-wrap: wrap;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-top: 8%;
 }
 
-img {
+div img {
 	background-color: grey;
 	border-radius: 20px;
-	height: 550px;
-	width: 550px;
-	min-width:550px;
-
+	width: 30vw;
+	min-width: 200px;
 }
 
 .text {
 	margin-left: 150px;
+	margin-top: 8%;
+	width: 35vw;
 }
-
-
+@media (max-width: 1750px) {
+	.text {
+	margin-left: 50px;
+	}
+}
+@media (max-width: 600px) {
+	.text {
+	margin-left: 0px;
+	width: 35vw;
+	}
+	div img {
+	background-color: grey;
+	border-radius: 20px;
+	width: 100%;
+	max-width: 35vw;
+	height: auto;
+	margin: auto;
+}
+}
 h2 {
 	font-family:'Aladin';
-	font-size: 6rem;
-	text-align: right;
+	font-size: 4vw;
+	text-align: left;
 	margin: 0px;
 	padding: 0px;
 	color: #F1D0BD;
@@ -132,23 +146,11 @@ h2 {
 
 h3 {
 	font-family: Serif;
-	text-align: right;
-	font-size: 1.875rem;
+	text-align: left;
+	font-size: 1.3vw;
 }
 
 
-	@media (max-width: 1100px){
-	h2 {
-			font-size: 3.5rem;
-		}
-		h3 {
-			font-size: 1.09rem
-		}
-		.text{
-			margin: auto;
-		}
-	
-	}
 
 footer {
 	background-image: linear-gradient(to right, #F1D0BD , #CFE1E1);
