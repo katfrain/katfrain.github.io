@@ -39,7 +39,6 @@ header nav li {
 header nav a {
 	color: white;
 	text-decoration: none;
-	opacity: 80%;
 }
 .button {
 	background-color: transparent;
@@ -166,7 +165,7 @@ footer nav {
 }
 
 .top-row {
-	font-size:25px;
+	font-size:1.9rem;
 	font-family: 'Aladin';
 	height: 30px;
 	padding:0px;
