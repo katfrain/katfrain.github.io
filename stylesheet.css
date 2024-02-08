@@ -16,15 +16,22 @@
 body {
     background-image: url(images/background.png);
     background-size: 100%;
+    margin: 0;
 }
 
-li {
+/*li {
     list-style: none;
-}
+}*/
 
 a {
     text-decoration: none;
     color: #7A8E76;
+}
+
+p {
+    color: white;
+    font-family: GowunDodum;
+    font-size: 1.25em;
 }
 
 header {
@@ -34,6 +41,14 @@ header {
     padding: 0;
     box-sizing: border-box;
     font-family: GowunDodum;
+}
+
+img {
+    object-fit: contain;
+    }
+
+ul {
+    list-style-image: url(images/bullet.png);
 }
 
 .navbar {
@@ -124,6 +139,62 @@ h3 {
     margin: 0;
     text-align: center;
     letter-spacing: 25px;
+    transform: translateY(-75vh);
+}
+
+#container {
+    display: inline-grid;
+    grid-template-columns: 15vw 27.5vw 5vw 37.5vw 15vw;
+    grid-template-rows: 50vh 10vh;
+}
+
+#portrait {
+    grid-column-start: 2;
+    grid-row-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    background-image: url(images/portrait.png);
+    background-size: 100%;
+}
+
+#aboutMeText {
+    grid-column-start: 4;
+    grid-row-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    padding-top: 5%;
+}
+
+#linkIconsContainer {
+    grid-column-start: 4;
+    grid-row-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+.linkIcons {
+    height: 100%;
+    aspect-ratio: 1/1;
+    margin: 0 1% 0 0;
+}
+
+#stars {
+    height: 40vh;
+    aspect-ratio: 1/1;
+    transform: translate(10vw, -50vh);
+    position: absolute;
+    background-image: url(images/stars.png);
+    background-size: 100%;
+}
+
+h4 {
+    font-family: DMSerifDisplay;
+    color: white;
+    font-size: 5em;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 25px;
+    transform: translateY(-10vh);
 }
 
 #skills {
@@ -136,6 +207,16 @@ h3 {
     width: 100%;
     height: 70vh;
 }
+
+a img:last-child {
+    display: none;  
+  }
+a:hover img:last-child {
+    display: inline;  
+  }
+a:hover img:first-child {
+    display: none;  
+  }
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
