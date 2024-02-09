@@ -31,6 +31,12 @@ li.nav-links {
     padding: 0;
 }
 
+li.interestList {
+    list-style: none;
+    font-size: 1.5em;
+    padding: 10px 0 10px 0;
+}
+
 a {
     text-decoration: none;
     color: #7A8E76;
@@ -133,11 +139,6 @@ h2 {
     transform: translate(-30%, -90%);
 }
 
-#whoAmI {
-    width: 100%;
-    height: 100vh;
-}
-
 h3 {
     font-family: DMSerifDisplay;
     -webkit-text-stroke-width: 1px;
@@ -148,6 +149,27 @@ h3 {
     text-align: center;
     letter-spacing: 25px;
     transform: translateY(-75vh);
+}
+
+h4 {
+    font-family: DMSerifDisplayItalic;
+    color: white;
+    font-size: 5em;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 25px;
+    transform: translateY(-10vh);
+}
+
+h4#interestTitle {
+    font-size: 1.6em;
+    letter-spacing: 8px;
+    transform: translateY(2vh);
+}
+
+#whoAmI {
+    width: 100%;
+    height: 100vh;
 }
 
 #container {
@@ -246,16 +268,6 @@ h3 {
     background-size: 100%;
 }
 
-h4 {
-    font-family: DMSerifDisplayItalic;
-    color: white;
-    font-size: 5em;
-    margin: 0;
-    text-align: center;
-    letter-spacing: 25px;
-    transform: translateY(-10vh);
-}
-
 #skills {
     background-color:rgba(0, 0, 0, 0.32);
     width: 100%;
@@ -267,9 +279,48 @@ h4 {
     padding: 27px 0 0 0;
 }
 
-#interests {
+#bottom {
     width: 100%;
     height: 70vh;
+}
+
+#bottomContainer {
+    display: inline-grid;
+    grid-template-columns: 12vw 25vw 51vw 10.5vw;
+    grid-template-rows: 53vh;
+}
+
+#interests {
+    grid-column-start: 2;
+    grid-row-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    background-color:rgba(0, 0, 0, 0.32);
+}
+
+#bottomMenu {
+    grid-column-start: 3;
+    grid-row-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+.interestIcons {
+    width: 50px;
+    aspect-ratio: 1/1;
+    transform: translateY(10px);
+    padding-right: 20px;
+}
+
+#checkOut {
+    font-size: 2em;
+    padding-left:73.5px;
+    margin-bottom: 0;
+}
+
+#copywrite {
+    font-size: 0.6em;
+    text-align: center;
 }
 
 a img:last-child {
