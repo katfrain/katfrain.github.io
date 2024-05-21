@@ -2,122 +2,42 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="myscripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Katrina Frain</title>
-    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="icon" type="image/x-icon" href="images/star.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <a href="index.html" class="name">Katrina Frain</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="x-icon"></i>
+        </label>
+
         <nav class="navbar">
-            <a href="#" class="nav-logo">Katrina Frain</a>
-            <ul class="nav-menu">
-                <li class="nav-links">
-                    <a href="#" class="nav-link">Design</a>
-                </li>
-                <li class="nav-links">
-                    <a href="#" class="nav-link">3D</a>
-                </li>
-                <li class="nav-links">
-                    <a href="#" class="nav-link">Pixel Art</a>
-                </li>
-                <li class="nav-links">
-                    <a href="#" class="nav-link">Programming</a>
-                </li>
-                <li class="nav-links" id="contactMe">
-                    <a href="#" class="nav-link">Contact me</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <a href="design.html">design</a>
+            <a href="3d.html">3D</a>
+            <a href="pixelart.html">pixel art</a>
+            <a href="programming.html">programming</a>
+            <a href="contact.html" id="contact">contact</a>
         </nav>
     </header>
-    <div id="welcomePage">
-        <h1>Portfolio</h1>
-        <h2>2024</h2>
-        <!--<p id="scrollDown">(scroll down...)</p>-->
-    </div>
-    <div id="whoAmI">
-        <div id="container">
-            <div id="portrait"></div>
-            <div id="aboutMeText">
-                <p>Lorem ipsum dolor sit amet consectetur. Netus neque vitae rutrum dignissim arcu quam bibendum. Odio lacinia sagittis sit nunc. Nunc lorem platea pretium faucibus lacinia ut ut aliquam. Adipiscing gravida in condimentum elit arcu eu nisi vitae cursus. Elit eget curabitur in cursus diam in lorem. Turpis porta sit cras mauris consectetur quis turpis pellentesque. Vitae dui dignissim faucibus molestie quis urna senectus. </p>
-            </div>
-            <div id="linkIconsContainer">
-                <a href="#"><img src="images/linkedIn.png" class="linkIcons"><img src="images/linkedIn_White.png" class="linkIcons"></a>
-                <a href="#"><img src="images/github.png" class="linkIcons"><img src="images/github_White.png" class="linkIcons"></a>
-                <a href="#"><img src="images/instagram.png" class="linkIcons"><img src="images/instagram_White.png" class="linkIcons"></a>
-            </div>
+    <div class="main-container">
+        <div class="portrait">
+            <img src="images/portrait-star.png" alt="Portrait" class="portrait-picture">
         </div>
-        <h3>who am i?</h3>
-    </div>
-    <div id="stars"></div>
-    <div id="skills">
-        <h4>skills</h4>
-        <div id="skillContainer">
-            <p id="leftListTitle"> software</p>
-            <ul id="leftList">
-                <li>&nbspBlender </li>
-                <li>&nbspIllustrator </li>
-                <li>&nbspPhotoshop </li>
-                <li>&nbspAseprite </li>
-            </ul>
-            <div id ="leftSkills">
-                <img src="images/skill_blender_css_java.png" class="skillBars">
-                <img src="images/skill_illustrator_photoshop.png" class="skillBars">
-                <img src="images/skill_illustrator_photoshop.png" class="skillBars">
-                <img src="images/skill_aseprite_html.png" class="skillBars">
-            </div>
-            <p id="rightListTitle"> coding</p>
-            <ul id="rightList">
-                <li>&nbspHTML </li>
-                <li>&nbspCSS </li>
-                <li>&nbspJava </li>
-                <li>&nbspJavaScript </li>
-            </ul>
-            <div id ="rightSkills">
-                <img src="images/skill_aseprite_html.png" class="skillBars">
-                <img src="images/skill_blender_css_java.png" class="skillBars">
-                <img src="images/skill_blender_css_java.png" class="skillBars">
-                <img src="images/skill_javascript.png" class="skillBars">
-            </div>
-    </div>
-    </div>
-    <div id="bottom">
-        <div id="bottomContainer">
-            <div id="interests">
-                <h4 id="interestTitle">interests :</h4>
-                <ul>
-                    <li class="interestList"><img src="images/gaming.png" class="interestIcons">gaming</li>
-                    <li class="interestList"><img src="images/crochet.png" class="interestIcons">crochet</li>
-                    <li class="interestList"><img src="images/finearts.png" class="interestIcons">fine arts</li>
-                </ul>
-            </div>
-            <div id="bottomMenu">
-                <p id="checkOut">check out my work! ~</p>
-                <ul>
-                    <li class="nav-links">
-                        <a href="#" class="nav-link">Design</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="#" class="nav-link">3D</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="#" class="nav-link">Pixel Art</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="#" class="nav-link">Programming</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="#" class="nav-link">Contact me</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="nicetomeetyou"><h1>nice to meet you!</h1></div>
+        <div class="bio">
+            <p>Lorem ipsum dolor sit amet consectetur. Placerat ultrices eros sed odio. Vitae ut porttitor justo quis. Nunc vitae molestie scelerisque turpis. Morbi egestas fringilla ut auctor aliquet diam platea. Lorem ipsum dolor sit amet consectetur. Placerat ultrices eros sed odio. Vitae ut porttitor justo quis. Nunc vitae molestie scelerisque turpis. Morbi egestas fringilla ut auctor aliquet diam platea.</p>
+        </div>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/katrina-frain"><img src="images/linkedin.png" class="linkIcons"><img src="images/linkedIn_White.png" class="linkIcons"></a>
+            <a href="https://github.com/katfrain"><img src="images/github.png" class="linkIcons"><img src="images/github_White.png" class="linkIcons"></a>
         </div>
     </div>
-    <p id="copywrite">copyright&#169  2024; designed by Katrina Frain</p>
 </body>
 </html>
