@@ -150,10 +150,12 @@ a:hover img:first-child {
   }
 
 .comingsoon {
-    margin-top: 150px;
+    padding-top: 150px;
     width: 100%;
+    height: 96vh;
     text-align: center;
     top:0;
+    position: relative;
 }
 
 .copyright {
@@ -161,6 +163,7 @@ a:hover img:first-child {
     width: 100%;
     text-align: center;
     bottom: 0;
+    position: relative;
 }
 
 
