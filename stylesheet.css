@@ -608,7 +608,11 @@ a:hover img:first-child {
     .close-overlay {
         grid-row: 1;
         grid-column: 1;
-        height: 35px;
+        height: auto;
+    }
+
+    button#close {
+        height: 40px;
     }
     
     .image-overlay {
