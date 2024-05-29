@@ -171,6 +171,12 @@ a:hover img:first-child {
 }
 
 /* portfolio display */
+.all-projects {
+    width: 100%;
+    height: fit-content;
+    min-height: 97vh;
+
+}
 .project-container {
     height: 30vh;
     width: 100%;
@@ -423,6 +429,17 @@ a:hover img:first-child {
   .active, .dot:hover {
     background-color: #717171;
   }
+
+#optional-link {
+    color: white;
+    transition: 0.1s;
+    text-decoration: none;
+}
+
+#optional-link:hover {
+    color: #e6c7c7;
+}
+
 
 /* breakpoints */
 @media (min-width: 1950px) {
