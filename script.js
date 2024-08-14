@@ -55,6 +55,30 @@ document.addEventListener("DOMContentLoaded", function() {
       projectTitle : ["StudyKnight, 2024"],
       projectInfo : ["StudyKnight is a Hackathon project I collaborated on with 2 other students. We created a chrome extension that acts as a game, a time tracker, and a personal checklist, as well as taking advantage of your own personal reward systems to keep you doing what's best for you. Using our own xp and level up system, completing tasks, staying on productive websites, and doing long sessions of work, gives you and your knight xp, eventually leveling up to grant you bigger and better weapons. You also add to your own list of distracting websites, which will decrease your xp, to encourage you to stay on track<br><br>I was in charge of the pixel art assets, UI design, and implementing this using html and css. This project pushed me out of my comfort zone creatively and I am really proud of what I have accomplished with Study Knight!<br><br>Skills used: HTML, CSS, Aseprite, Figma<br><br>"],
       optionalLink : ["https://devpost.com/software/study-knight"]
+    },
+    project6: {
+      images: ["images/project6-1.png", "images/project6-2.gif"],
+      captions: ["The kitchen model", "Turntable view"],
+      dots: ["dot1", "dot2"],
+      projectTitle : ["Isometric Kitchen Scene, 2022"],
+      projectInfo : ["This was one of my first big projects done in Blender. With my previous projects, I followed detailed tutorials step by step, and while it introduced me to the fundamentals of the software, I realized I was not learning a lot. With this project, I challenged myself to try everything by myself first, before consulting other help. This pushed me to experiment with the tools of the program and cemented important information in my mind. I started with the big shapes, got creative with the smaller details, and looked into tutorials when I got stuck. I enjoyed filling the room with clutter, such as plants, plates, and strawberries I made in a previous exercise. This project pushed me out of my comfort zone and taught me so many valuable lessons about 3D modeling.<br><br>Skills used: Blender<br><br>"],
+      optionalLink : [""]
+    },
+    project7: {
+      images: ["images/project7-1.png", "images/project7-2.gif"],
+      captions: ["A spooky little witches hut set in a swamp", "Turntable view"],
+      dots: ["dot1", "dot2"],
+      projectTitle : ["Witches Hut, 2022"],
+      projectInfo : ["When I started this scene, I understood most of the basics of Blender and felt comfortable creating simple objects. I set a few goals with this piece to further challenge myself. My biggest goals were: Add basic animations and learn how to create more organic shapes, such as the tree, the reeds, and the water. I was proud to accomplish both of these. Through this project I learned how to use keyframes and displacement maps to create waves in the water; I learned how to create a tree from a single vertice, and it taught me to think creatively to create different animations.<br><br>Skills used: Blender<br><br>"],
+      optionalLink : [""]
+    },
+    project8: {
+      images: ["images/project8-2.png", "images/project8-1.png"],
+      captions: ["The fishTank website", "The goldfish you start with"],
+      dots: ["dot1", "dot2"],
+      projectTitle : ["fishTank, 2022"],
+      projectInfo : ["fishTank is an interactive website/mini-game designed around caring for fish. While the objective is quite simple, the creation of this website taught me so much about JavaScript, which I was still unfamiliar with at the time of beginning this project. <br><br>This was also my first big pixel art project and it's where I really found my footing in the medium. Working on this project taught me so much about drawing in pixel art, from laying out the shapes to shading, which was all very different from the traditional art that I was used to.  <br><br>Skills used: HTML, CSS, JS, Aseprite<br><br>"],
+      optionalLink : ["https://hybrid.concordia.ca/k_frain/fishtank.html"]
     }
   };
 
@@ -142,11 +166,30 @@ document.addEventListener("DOMContentLoaded", function() {
       overlay.style.display = "none";
   }
 
+// Gallery functionality
+  let popup = document.getElementById('g-popup');
+  let popupImg = document.getElementById("popup-img");
+  let popupCaptionText = document.getElementById("popup-caption");
+  let popupHeader = document.getElementById("head");
+
+  function popupFunc(imgElement) {
+    popup.style.display = "block";
+    popupImg.src = imgElement.src;
+    popupCaptionText.innerHTML = imgElement.alt;
+    popupHeader.style.display = "none";
+  }
+  function closePopup() { 
+    popup.style.display = "none";
+    popupHeader.style.display = "flex";
+  }
+
   window.loadProject = loadProject;
   window.plusSlides = plusSlides;
   window.changeSlide = changeSlide;
   window.on = on;
   window.off = off;
+  window.popupFunc = popupFunc;
+  window.closePopup= closePopup;
 
   loadProject('project1');
 });

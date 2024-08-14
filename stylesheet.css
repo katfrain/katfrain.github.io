@@ -124,6 +124,13 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    color: #6D1616;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 87.7px;
+}
+
 p {
     text-align: left;
     margin: 10px;
@@ -440,6 +447,110 @@ a:hover img:first-child {
     color: #e6c7c7;
 }
 
+/* Gallery */
+
+.gallery-container{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    width:75vw;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    column-gap: 20px;
+}
+
+
+.gallery-img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    opacity: 80%;
+
+}
+
+.gallery-p {
+    margin: 0 0 10px 0;
+    font-size: small;
+}
+
+.gallery-popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.popup-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#popup-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-text {
+    font-size: medium;
+    text-align: center;
+    width: 100%;
+}
+
+#contact-page{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin:0;
+}
+
+#contact-page img {
+    margin: 20px;
+}
+
+.contact-container {
+    height: 100vh;
+}
 
 /* breakpoints */
 @media (min-width: 1950px) {
@@ -679,6 +790,10 @@ a:hover img:first-child {
     button#close {
         margin: 10px 15px;
     }
+
+    .popup-content {
+        width: 100%;
+      }
 
 }
 
