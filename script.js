@@ -79,6 +79,14 @@ document.addEventListener("DOMContentLoaded", function() {
       projectTitle : ["fishTank, 2022"],
       projectInfo : ["fishTank is an interactive website/mini-game designed around caring for fish. While the objective is quite simple, the creation of this website taught me so much about JavaScript, which I was still unfamiliar with at the time of beginning this project. <br><br>This was also my first big pixel art project and it's where I really found my footing in the medium. Working on this project taught me so much about drawing in pixel art, from laying out the shapes to shading, which was all very different from the traditional art that I was used to.  <br><br>Skills used: HTML, CSS, JS, Aseprite<br><br>"],
       optionalLink : ["https://hybrid.concordia.ca/k_frain/fishtank.html"]
+    },
+    project9: {
+      images: ["images/project9-1.png", "images/project9-2.png", "images/project9-3.png"],
+      captions: ["A fire demon demands flesh", "Harvest flesh from the flesh garden", "Keep yourself alive by consuming soup and feeding the fire"],
+      dots: ["dot1", "dot2", "dot3"],
+      projectTitle : ["Flesh Garden, 2024"],
+      projectInfo : ["Flesh Garden is a first-person point-and-click survival horror game created for Gamerella 2024, a 2-day game jam. The game's objective is to survive. As your hunger wanes, so does the hunger of the fire that keeps the darkness at bay. Sustain the both of you using resources from your flesh garden, But beware—neglect either, and you risk starvation or becoming fuel for the fire yourself.<br><br>My role in the team was focused on programming, marking my first experience in a game jam as a programmer. To ensure manageability, we started with a small scope and gradually expanded as the project progressed. I developed key systems, including the inventory, the garden's growth mechanics, and the soup-cooking system. We utilized Godot as our game engine and GitHub for seamless collaboration. This project significantly boosted my confidence in game design, programming, and using both Godot and GitHub effectively.  <br><br>Skills used: Godot, GDScript, Github<br><br>"],
+      optionalLink : ["https://wevwyrm.itch.io/fleshgarden"]
     }
   };
 
