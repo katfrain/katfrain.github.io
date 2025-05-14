@@ -324,7 +324,7 @@ a:hover img:first-child {
 }
 
 .image-box img{
-    max-height: 100%;
+    max-height: 600px;
     max-width: 80%;
     object-fit: contain;
     order: 1;
