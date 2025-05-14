@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
             captions: ["UniTrade Banner", "Log-in Screen", "Shop Screen", "User Screen", "Design Process"],
             dots: ["dot1", "dot2", "dot3", "dot4", "dot5"],
             projectTitle: ["UniTrade, 2025"],
-            projectInfo: ["<b>UniTrade</b> is a mobile app designed to help students trade and barter items with others on campus. It was developed over 48 hours during <b>ConUHacks IX</b> by a team of four. I contributed to the project by designing the UI/UX in Figma and building responsive UI components using React Native.<br><br> project was especially challenging due to the tight timeline and the fact that it was our team’s first time using React Native. While I was able to draw on my web development experience, adapting to mobile development required a quick learning curve and collaboration under pressure.\n <br><br>Skills used: React Native, Figma, Github<br><br>"],
+            projectInfo: ["<b>UniTrade</b> is a mobile app designed to help students trade and barter items with others on campus. It was developed over 24 hours during <b>ConUHacks IX</b> by a team of four. I contributed to the project by designing the UI/UX in Figma and building responsive UI components using React Native.<br><br> project was especially challenging due to the tight timeline and the fact that it was our team’s first time using React Native. While I was able to draw on my web development experience, adapting to mobile development required a quick learning curve and collaboration under pressure.\n <br><br>Skills used: React Native, Figma, Github<br><br>"],
             optionalLink: ["https://devpost.com/software/unitrade-oexp03"]
         },
         project12: {
