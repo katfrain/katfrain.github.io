@@ -1,0 +1,43 @@
+.Link-Container {
+    Display: flex;
+    flex-direction: row;
+    padding: 1vh;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.Link-Container a {
+    display: inline-block;
+    width: 3vh;
+    height: 3vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.LinkedIn-Img {
+    background-image: url("../../public/images/Linked-In-White.png");
+    transition: background-image 0.5s ease;
+}
+
+.Github-Img {
+    background-image: url("../../public/images/Github-White.png");
+    transition: background-image 0.5s ease;
+}
+
+.Itchio-Img {
+    background-image: url("../../public/images/Itchio-White.png");
+    transition: background-image 0.5s ease;
+}
+
+.LinkedIn-Img:hover {
+    background-image: url("../../public/images/Linked-In-Hover.png");
+}
+
+.Github-Img:hover {
+    background-image: url("../../public/images/Github-Hover.png");
+}
+
+.Itchio-Img:hover {
+    background-image: url("../../public/images/Itchio-Hover.png");
+}

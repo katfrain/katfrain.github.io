@@ -1,0 +1,87 @@
+.PortfolioPage {
+    display: flex;
+    height: 75vh;
+    aspect-ratio: 1.2 / 1;
+    flex-direction: column;
+    border-radius: 1vh;
+    border: 0.3vh solid var(--dark-color);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.Top-Bar {
+    height: 25%;
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 0.7vh 0.7vh 0 0;
+    border-bottom: 0.3vh solid var(--dark-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Gallery {
+    height: 75%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.Info {
+    justify-content: center;
+}
+
+.Top-Bar h2 {
+    color: var(--light-color);
+    -webkit-text-stroke: 0 var(--light-color);
+    font-size: 10vh;
+    font-weight: 200;
+    font-family: "Pixelify Sans", sans-serif;
+    margin: 0 2vh;
+}
+
+.Top-Bar h3 {
+    color: var(--light-color);
+    margin: 0;
+    padding-right: 2vh;
+}
+
+.Top-Bar p {
+    color: var(--light-color);
+    margin: 0;
+    padding-right: 2vh;
+}
+
+.Card-Container {
+    margin: 2.5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vh;
+}
+
+@media screen and (max-width: 640px) {
+    .PortfolioPage {
+        width: 80vw;
+        height: 70vh;
+        margin: auto;
+    }
+
+    .Top-Bar {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .Info {
+        padding: 2vh;
+    }
+
+    .Card-Container {
+        margin: 2.5vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3vh;
+    }
+
+    .Top-Bar h2 {
+        font-size: 6vh;
+    }
+}

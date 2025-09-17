@@ -1,0 +1,75 @@
+.Header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-color);
+}
+
+.NavContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+    padding: 1vh;
+}
+
+.Title {
+    margin: 0;
+    font-size: 5vh;
+    top: 50%;
+    padding-left: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+    -webkit-text-stroke: 0.3vh var(--dark-color);
+}
+
+.Navigation-Button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 6vh;
+    padding: 0.2vh;
+    background-color: transparent;
+    transition: padding 0.3s ease;
+}
+
+.Nav-Img {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 1vh;
+    border: 0.3vh solid var(--dark-color);
+}
+
+.Nav-Title {
+    font-size: 1.5vh;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+button:focus,
+button:active,
+button:hover{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.Navigation-Button:hover {
+    padding: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .Header {
+        width: 80vw;
+    }
+
+    .Title {
+        font-size: 3vh;
+        -webkit-text-stroke: 0.1vh var(--dark-color);
+    }
+
+    .Navigation-Button {
+        width: 4vh;
+    }
+}

@@ -1,0 +1,149 @@
+.ProjectPage {
+    display: flex;
+    height: 75vh;
+    aspect-ratio: 1.2 / 1;
+    flex-direction: column;
+    border-radius: 1vh;
+    border: 0.3vh solid var(--dark-color);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.Project-Header {
+    height: 10%;
+    text-align: end;
+}
+
+.Project-Gallery {
+    height: 55%;
+}
+
+.Project-Details {
+    height: 35%;
+    color: var(--dark-color);
+    border-top: 0.3vh solid var(--dark-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Project-Details-Content {
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 0.3vh solid var(--dark-color);
+}
+
+.ProjectPage button {
+    border-radius: 1vh;
+    border: 0.3vh solid var(--dark-color);
+    background-color: var(--green);
+    color: var(--dark-color);
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 2.5vh;
+    padding:0 1vh;
+    aspect-ratio: 1 / 1;
+    margin: 1.8vh;
+}
+
+.Project-Page-Tags-Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0.5vh;
+    column-gap: 1vh;
+    margin-top: 1vh;
+}
+
+.Project-Page-Title {
+    font-size: 3.5vh;
+}
+
+.Project-Page-Description {
+    font-size: 1.5vh;
+}
+
+.Project-Details-Info {
+    width: 65%;
+    height: 80%;
+    margin: 2vh;
+    font-size: 2vh;
+    overflow-y: scroll;
+}
+
+/* Carousel */
+
+.Project-Gallery-Carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 100%;
+}
+
+.Project-Gallery-Img {
+    height: 85%;
+    max-width: 90%;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.Carousel-Arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.Carousel-Arrow:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.Carousel-Arrow.Left {
+    left: 1rem;
+}
+
+.Carousel-Arrow.Right {
+    right: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+    .ProjectPage {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .Project-Gallery-Img {
+        height: auto;
+        max-height: 90%;
+    }
+
+    .Project-Gallery {
+        height: 45%;
+    }
+
+    .Project-Details {
+        height: 45%;
+    }
+
+    .Project-Page-Title {
+        font-size: 2.5vh;
+    }
+
+    .Project-Details-Info {
+        width: 100%;
+        font-size: 1.5vh;
+    }
+}
