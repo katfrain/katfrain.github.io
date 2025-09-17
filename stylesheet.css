@@ -1,0 +1,18 @@
+﻿
+body {
+    background-color: #3183DC;
+    background-image: url('images/trees.png'), url('images/water.png'), url('images/clouds.png'), url('images/sky.png'), linear-gradient(to bottom, #3183DC 50%, #54A0F2 50%);
+    background-size: 110% auto, 110% auto, 110% auto, 120% auto, cover;
+    background-position: center, center, center, center, center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#header {
+    height: 10vh;
+    width: 10vw;
+    background-color: white;
+    padding: 0;
+    z-index: -5;
+}

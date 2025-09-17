@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body id="container">
+    <div id="header">hello</div>
+    <script>
+        (function () {
+            document.addEventListener("mousemove", parallax);
+            const elem = document.querySelector("#container");
+
+            function parallax(e) {
+                let mouseX = e.clientX / window.innerWidth - 0.5;
+                let mouseY = e.clientY / window.innerHeight - 0.5;
+
+                let _depth1 = `${50 + mouseX * 8}% ${50 + mouseY * 8}%`;
+                let _depth2 = `${50 + mouseX * 12}% ${50 + mouseY * 12}%`;
+                let _depth3 = `${50 + mouseX * 20}% ${50 + mouseY * 20}%`;
+                let _depth4 = `${50 + mouseX * 25}% ${50 + mouseY * 25}%`;
+
+                elem.style.backgroundPosition = `${_depth4}, ${_depth3}, ${_depth2}, ${_depth1}`;
+            }
+        })();
+    </script>
+</body>
+</html>
